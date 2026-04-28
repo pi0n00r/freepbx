@@ -1,0 +1,22 @@
+# /etc/systemd/system/freepbx-nag-css.path
+#
+# inotify watcher for FreePBX dashboard LESS source. Fires the companion
+# .service unit whenever the file is overwritten (typically by
+# fwconsole ma upgrade dashboard or a framework update touching the module
+# tree). Equivalent to PVE's dpkg-driven post-invoke hook, but using systemd
+# path units because FreePBX module updates are not apt-driven.
+
+[Unit]
+Description=Watch FreePBX dashboard LESS source for overwrites; restore nag-suppression CSS
+Documentation=https://notes.bajaj.com/#root/SPPgZeGqpeJ6/b8DA6xlyS2ve/kuk7RrPvh93c
+
+[Path]
+# PathChanged fires on any modification (write close, atomic replace, etc.).
+PathChanged=/var/www/html/admin/modules/dashboard/assets/less/dashboard.less
+# Run the unit even if the path doesn't exist at boot (module not installed
+# yet, or being reinstalled). The .service is a no-op if the file is missing.
+MakeDirectory=no
+Unit=freepbx-nag-css.service
+
+[Install]
+WantedBy=multi-user.target
