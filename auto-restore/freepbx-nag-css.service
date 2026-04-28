@@ -1,0 +1,24 @@
+# /etc/systemd/system/freepbx-nag-css.service
+#
+# Oneshot unit triggered by freepbx-nag-css.path on file overwrites.
+# Re-applies the CSS nag-suppression rule. Idempotent.
+
+[Unit]
+Description=Restore FreePBX nag-suppression CSS into dashboard LESS source
+Documentation=https://notes.bajaj.com/#root/SPPgZeGqpeJ6/b8DA6xlyS2ve/kuk7RrPvh93c
+# Don't fire while a system update is in progress (apt holds this lock).
+# Wait briefly so the update writes settle before we re-append.
+After=network.target
+
+[Service]
+Type=oneshot
+# Brief delay lets the triggering write fully complete (some updates do
+# multiple sequential writes to the same file).
+ExecStartPre=/bin/sleep 2
+ExecStart=/usr/local/bin/freepbx-restore-nag-css.sh
+# If the script ever exits non-zero, log it; don't crash the system.
+SuccessExitStatus=0
+StandardOutput=journal
+StandardError=journal
+
+# No [Install] — this unit is started by the .path watcher, not enabled directly.
