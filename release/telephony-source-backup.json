@@ -1,0 +1,22 @@
+{
+  "schema": "pi0n00r-telephony-source-backup-v1",
+  "public_repository": "https://github.com/pi0n00r/freepbx",
+  "public_branch": "bajaj/telephony-backup",
+  "source_repository": "bajaj/telephony",
+  "source_commit": "f023339aba06c7e6990737b431a0ef546243a272",
+  "source_tree": "9d7d59477daeb5a6911a731988764e118da487c2",
+  "source_subtree": "telephony",
+  "source_files": 60,
+  "source_bytes": 731961,
+  "source_subtree_byte_exact": true,
+  "private_payloads_included": false,
+  "verification": {
+    "backup_verifier": "pass",
+    "public_repository_tests": "7 pass",
+    "crustacea_recovery_tests": "67 pass",
+    "voice_organ_transaction_tests": "28 pass",
+    "rita_producer_tests": "5 pass, 2 skipped"
+  },
+  "known_imported_source_limitation": "The copied historical Ava owner-helper test is not a release gate and has two stale one-file assertions against the copied two-file helper. The files remain byte-exact to the accepted private source; this public backup does not silently rewrite them.",
+  "native_action": false
+}

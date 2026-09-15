@@ -44,6 +44,12 @@ Restoration still requires separately retained private material and current
 owner approval. Nothing in this repository performs a deployment merely by
 being cloned or verified.
 
+`release/telephony-source-backup.json` records the source identity, offline
+test results and one preserved historical Ava-test limitation. The `telephony/`
+subtree itself is byte- and mode-exact to the accepted private source tree;
+public-backup metadata lives outside it so provenance remains directly
+checkable with Git's subtree hash.
+
 See `INDEPENDENT-FORK-NOTICE.md` for the project boundary. The historical
 calibration documentation follows unchanged below.
 
