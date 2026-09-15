@@ -1,4 +1,36 @@
-# FreePBX Calibration Notes
+<!--
+AI-NOTICE:Schema-Version=0.1
+AI-NOTICE:License=AGPL-3.0-or-later
+AI-NOTICE:Project=pi0n00r-freepbx-integration
+AI-NOTICE:Repository=https://github.com/pi0n00r/freepbx
+AI-NOTICE:Network-Service=No
+-->
+
+# Independent FreePBX Integration Layer
+
+This is an independently maintained integration and release layer for systems
+built on FreePBX and Asterisk. It is not affiliated with, sponsored by,
+endorsed by, or an official distribution of Sangoma Technologies or the
+FreePBX project. FreePBX and Asterisk remain separately versioned upstream
+dependencies.
+
+The first retained component is the existing FreePBX 17 Sysadmin-notice
+calibration. Its implementation remains at its original paths and is pinned by
+`release/freepbx-integration-lock.json`. Run the offline verifier before using
+any retained component:
+
+```sh
+python3 -B scripts/verify-integration.py
+```
+
+This repository contains source and release metadata only. Machine-specific
+configuration, credentials, populated recovery payloads and deployment
+receipts do not belong here.
+
+See `INDEPENDENT-FORK-NOTICE.md` for the project boundary. The historical
+calibration documentation follows unchanged below.
+
+## FreePBX Calibration Notes
 
 Sterile documentation and overrides related to FreePBX Sysadmin / dashboard nag behavior. **Clarity only — not for advertising, endorsement, or feature unlocking.**
 

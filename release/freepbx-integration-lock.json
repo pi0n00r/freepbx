@@ -1,0 +1,51 @@
+{
+  "schema": "pi0n00r-freepbx-integration-lock-v1",
+  "project": "pi0n00r/freepbx",
+  "independent_project": true,
+  "upstream_affiliation": false,
+  "source_baseline_commit": "f657f375be084623ce97e2b1334fcf32eea169c3",
+  "components": [
+    {
+      "id": "freepbx17-sysadmin-notice-calibration",
+      "status": "retained",
+      "scope": "Cosmetic suppression of one inapplicable dashboard notification; no licence state, entitlement, feature or obfuscated module change",
+      "freepbx_compatibility": "17.x",
+      "activation": "Owner-reviewed systemd path and oneshot units plus an explicit FreePBX reload; never automatic from this verifier",
+      "files": [
+        {
+          "path": "auto-restore/README.md",
+          "sha256": "05b8ea273758ce9a241fb93001dc1c9a47cc6ccdee73282bf0c8671e0a29c586",
+          "size": 7366,
+          "git_mode": "100644",
+          "install_mode": null
+        },
+        {
+          "path": "auto-restore/freepbx-nag-css.path",
+          "sha256": "32b2b57bd26c44a1bc9742edddffaaea49ec84cfd9f122d6d28e92c3251e2142",
+          "size": 980,
+          "git_mode": "100644",
+          "install_mode": "0644"
+        },
+        {
+          "path": "auto-restore/freepbx-nag-css.service",
+          "sha256": "0d568da6b4812deee4e41d87e116986fcc9e465886b1e248b83d239b26e50aa6",
+          "size": 937,
+          "git_mode": "100644",
+          "install_mode": "0644"
+        },
+        {
+          "path": "auto-restore/freepbx-restore-nag-css.sh",
+          "sha256": "d3f6e49c5b6f515e9fada83f558f710e9e56a00b8bae0eb132cba1ab989e396e",
+          "size": 3406,
+          "git_mode": "100644",
+          "install_mode": "0755"
+        }
+      ],
+      "preserved_historical_files": [
+        "DEPLOYMENT.md",
+        "SysadminOverride.class.php",
+        "freepbx-sysadmin-nag-optics.md"
+      ]
+    }
+  ]
+}
