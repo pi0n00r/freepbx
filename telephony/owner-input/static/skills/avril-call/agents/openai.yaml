@@ -1,0 +1,4 @@
+interface:
+  display_name: "Avril Call"
+  short_description: "Run and verify authenticated Avril calls"
+  default_prompt: "Use $avril-call to safely plan, place, monitor, or acceptance-test an Avril call."

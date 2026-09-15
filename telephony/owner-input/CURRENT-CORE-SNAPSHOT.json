@@ -1,0 +1,140 @@
+{
+  "archive_bytes": 124003503,
+  "archive_manifest_sha256": "8c5e82050115ea4dfefe5af98215252f0f2368f9d41cf58ee70ab687c0e75476",
+  "archive_records": 37886,
+  "archive_sha256": "f8fab62a41fdc351729121c8de2a7eedaa912477950df720bb0d1a774074f63e",
+  "build_info": {
+    "buildId": "2026.9.4-2f02f65dc6dc-2026-09-14T18-06-11.806Z",
+    "builtAt": "2026-09-14T18:06:11.806Z",
+    "commit": "2f02f65dc6dce2eb203d2d1a468919d3b471e457",
+    "version": "2026.9.4"
+  },
+  "capture_receipt_sha256": "967d8bfa77d4e0a7b49a719248900ed166ee1cd23350623d5922fc529cdc6623",
+  "core_manifest_sha256": "43b814537c4b8f5756aaecb20f4a6b42a046c170898631a95cec009c5c5b42f2",
+  "four_retained_patchers_current_byte_equal_twice": false,
+  "historical_owner_receipt_unchanged": true,
+  "patch_target_hashes": {
+    "dreaming-narrative-OOe1PAul.mjs": "36b58c3d94296fb5493b8f17e5977138654684d42f1f0a73fd8d51a0c01e069e",
+    "dreaming-phases-C-w6u2U1.mjs": "e648e2379c80a5aa0baa1aa1221eedc10fe08614914b1144a4195ab4d8d5ed25",
+    "session-ingestion-6vy4mT7v.mjs": "3013ba16c2d802aa6e3d5d1f39ba722a92b2b86676a7ad139dd2afca19652e01"
+  },
+  "patch_target_hashes_after_fixture": {
+    "dreaming-narrative-OOe1PAul.mjs": "36b58c3d94296fb5493b8f17e5977138654684d42f1f0a73fd8d51a0c01e069e",
+    "dreaming-phases-C-w6u2U1.mjs": "e648e2379c80a5aa0baa1aa1221eedc10fe08614914b1144a4195ab4d8d5ed25",
+    "session-ingestion-6vy4mT7v.mjs": "1983dc2784a4893c3290238d444f4c8453870465db3083f0c2be27399a18b339"
+  },
+  "patch_targets": {
+    "dreaming-narrative": "/usr/lib/node_modules/openclaw/dist/dreaming-narrative-OOe1PAul.mjs",
+    "dreaming-phases": "/usr/lib/node_modules/openclaw/dist/dreaming-phases-C-w6u2U1.mjs",
+    "session-ingestion": "/usr/lib/node_modules/openclaw/dist/session-ingestion-6vy4mT7v.mjs"
+  },
+  "patcher_fixture_runs": [
+    {
+      "exit": 0,
+      "iteration": 1,
+      "patcher": "oc-corpus-noise-filter-patch.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9148ca68555b9c0867950a92493209713a2fc899a3a3d670c419bdfe3b1bd1a6"
+    },
+    {
+      "exit": 0,
+      "iteration": 1,
+      "patcher": "oc-corpus-taint-filter-patch.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a78859ca35ac9b2e46b070e7219c53703a9efe9d4b712dffa8dd93a94fc13062"
+    },
+    {
+      "exit": 0,
+      "iteration": 1,
+      "patcher": "oc-rem-narrative-firegate-patch.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "57a956916fac8faa934747ecc3a259844e930c9561612bb3d5a302829413f6cd"
+    },
+    {
+      "exit": 0,
+      "iteration": 1,
+      "patcher": "oc-narrative-timeout-extend-patch.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "53974ceadca2741f6cf69a96de080a977e6771113fa041a218a439464e9c9f5f"
+    },
+    {
+      "exit": 0,
+      "iteration": 2,
+      "patcher": "oc-corpus-noise-filter-patch.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6e8ab774767b87fb89b5be8de4f99df31f055c8ecca3bc8c4879763ee18275d9"
+    },
+    {
+      "exit": 0,
+      "iteration": 2,
+      "patcher": "oc-corpus-taint-filter-patch.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a3e97d9664b64039db86c43160571127679913d20ff67d1d0a79dc30f07fcbf4"
+    },
+    {
+      "exit": 0,
+      "iteration": 2,
+      "patcher": "oc-rem-narrative-firegate-patch.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "57a956916fac8faa934747ecc3a259844e930c9561612bb3d5a302829413f6cd"
+    },
+    {
+      "exit": 0,
+      "iteration": 2,
+      "patcher": "oc-narrative-timeout-extend-patch.py",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "53974ceadca2741f6cf69a96de080a977e6771113fa041a218a439464e9c9f5f"
+    }
+  ],
+  "patcher_second_pass_idempotent": true,
+  "protected_metadata": {
+    "/etc/aimee-main-voice-relay.env": {
+      "gid": 1000,
+      "mode": 416,
+      "sha256": "937039ef54b4306e3ce134f9c59c8e4f0c797103a165333df775d0cc8b12c9e9",
+      "size": 833,
+      "uid": 0
+    },
+    "/etc/systemd/system/aimee-main-voice-relay.service": {
+      "gid": 0,
+      "mode": 420,
+      "sha256": "edd47e7bf521890c0e0749255dd1e15bbb5f27de97edd0c0072c0e728b6f0077",
+      "size": 641,
+      "uid": 0
+    },
+    "/etc/systemd/system/openclaw.service": {
+      "gid": 0,
+      "mode": 420,
+      "sha256": "320d091c69bdcb77a97718d8a632a3fb57654359a723f0d62277e8bc6dab8977",
+      "size": 674,
+      "uid": 0
+    },
+    "/home/aimee/.openclaw/openclaw.json": {
+      "gid": 1000,
+      "mode": 384,
+      "sha256": "df5b26d5473880104b27ff12120edb9c776e007d8e3a3fc52d4465d537caaefc",
+      "size": 41657,
+      "uid": 1000
+    },
+    "/home/aimee/.openclaw/workspace/skills/avril-call/.openclaw/source-origin.json": {
+      "gid": 1000,
+      "mode": 384,
+      "sha256": "778080838dd5eb08185b91517108d02f51475d015407184833f8222708714894",
+      "size": 145,
+      "uid": 1000
+    },
+    "/usr/local/libexec/aimee-main-voice-relay": {
+      "gid": 0,
+      "mode": 493,
+      "sha256": "4f85c196361920c50377737d507a813fb61a02ece4a8e03a4c5c5358ce49e260",
+      "size": 67769,
+      "uid": 0
+    }
+  },
+  "restore_compatibility": "owner_review_required_noise_taint_change_current_ingestion",
+  "runtime_commit": "2f02f65dc6dce2eb203d2d1a468919d3b471e457",
+  "schema": "vip-current-core-binding-snapshot-v1",
+  "scope": "Current disk plus unchanged service observation, not loaded-module/native recovery/human acceptance",
+  "service_after": "MainPID=896195\nNRestarts=0\nActiveState=active\nSubState=running\nInvocationID=d0da1fe432bb4e5a95a7cbc78e49b49e\n",
+  "service_before": "MainPID=896195\nNRestarts=0\nActiveState=active\nSubState=running\nInvocationID=d0da1fe432bb4e5a95a7cbc78e49b49e\n"
+}

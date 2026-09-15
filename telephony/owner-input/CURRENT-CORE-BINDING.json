@@ -1,0 +1,29 @@
+{
+  "acceptance": {
+    "answer_contract": "later",
+    "calendar_verification": "deferred",
+    "confirmed_message_to_IMAP": "mandatory_unproven",
+    "latest_outgoing_smoke": "failed_STTfinal_count_0_before_model",
+    "schedule": "amber_operator_accepted_latency",
+    "schedule_latency_seconds": 223
+  },
+  "builder_native_changes": false,
+  "config_archive_sha256": "180019694b4bdcbf72796f242a8e8a6f664eb592063777b0d5a92c046f636830",
+  "current_config_amendment": "CURRENT-CONFIG-AMENDMENT.json",
+  "current_config_amendment_sha256": "b82193b84319cba9aa22b5d71df61e9a222addff6a693fe9438de64f8d416b41",
+  "known_restore_gap": "owner_review_required_noise_taint_change_current_ingestion",
+  "owner_restore_executable_with_retained_four_patchers": false,
+  "package": "/home/aimee/work/jd-voice-discovery-2f02f65-package/openclaw-2f02f65.tgz",
+  "package_anchors": {
+    "dist/build-info.json": "a4deec0e68ba6f64bc88ccea2ed23dbae03091acc43bdf739b62b3718ba6b6f4",
+    "openclaw.mjs": "97464647c50a1420d530db948cb203826306ef6b3a84810b6801c338366cecaf",
+    "package.json": "282b6273fbed7209f51005bec12ce3ecd9f35841fc141b530a204a12eac63cbd"
+  },
+  "package_bytes": 67056638,
+  "package_sha256": "c840aebb3cee7df7b2829864de5d11d0fb5ddc01f4df388715949190373c8ef8",
+  "runtime_commit": "2f02f65dc6dce2eb203d2d1a468919d3b471e457",
+  "schema": "vip-current-core-binding-v1",
+  "scope": "Current package and disk binding, not loaded-module/native recovery or human acceptance",
+  "snapshot": "CURRENT-CORE-SNAPSHOT.json",
+  "snapshot_sha256": "1d880cb130c9a61049718e0bb30c3622bae04d03fd67f97bf2fa20a1152bbc77"
+}

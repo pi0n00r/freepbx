@@ -14,7 +14,8 @@ does not contain the upstream FreePBX source tree, and is not affiliated with,
 sponsored by, or endorsed by Sangoma Technologies or the FreePBX project.
 
 The repository may carry independently maintained adapters, declarative
-component locks, verification tools and narrowly scoped compatibility patches.
+component locks, verification tools, a source-only telephony integration backup
+and narrowly scoped compatibility patches.
 Each retained component must identify its exact files, upstream compatibility,
 activation boundary and verification contract. Private configuration and
 credentials remain outside the public repository.

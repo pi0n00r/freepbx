@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "actors": {
+    "vip.bajaj.com": "gary",
+    "ava.bajaj.com": "aimee",
+    "avril.bajaj.com": "aimee",
+    "crustacea.bajaj.com": "aimee"
+  },
+  "historical_component_identity_sha256": "779c08cfd43d58b609b4bb9733540e4307d8bc34568a8118660dd6b6151a93e0",
+  "unit": {
+    "sha256": "11267c4d3f3a581c69f131587ea33c52602a3e6ca615add3cd4da038fb3b88ee",
+    "local": "/home/aimee/.local/share/rita-private-kits/rita-reconcile-5a023ac-20260914-r8-corrected/native-aimee-pbx-router.service",
+    "capture": "Documents/Projects/Rita/staging/populated-r8-5a023ac-20260914/evidence/native-aimee-pbx-router.service",
+    "template_equivalent": false
+  },
+  "custom_sha256": "ef624c3b95ae2918284387548b89444c2b39cbeab3c0ca106304f3673834a4f8",
+  "order": [
+    "tessa",
+    "rita",
+    "ava",
+    "voice-organ",
+    "crustacea"
+  ],
+  "gaps": {
+    "crustacea": "operator_host_local_staging_fresh_owner_native_phase_acceptance_required_not_missing_core_closure_or_checker",
+    "tessa": "automated_Tessa_transaction_and_rollback_unsupported_manual_owner_Compose_install_supported",
+    "relay-foundation": "accepted_file_only_activation_retained_fresh_host_unit_environment_users_still_required",
+    "jaime": "LocalAI_4.8.2_recipe_retained_fresh_host_image_worker_ROCm_weights_and_owner_restore_required",
+    "bridgette": "enabled_MCP_configuration_and_owned_recovery_kit_required",
+    "native-freepbx": "native_UI_accounts_groups_and_existing_service_foundations_required"
+  },
+  "external_foundations": {
+    "ava-stt-current": {
+      "kind": "sha_manifest",
+      "acquisition": "Documents/Projects/Ava/staging/jd-stt-idle-finalisation-20260914/payloads",
+      "manifest": "SHA256SUMS",
+      "manifest_sha256": "1f4185a0f15b2f46af7b995185a97b273242666fff788570e9a8a6a871dc0d5c",
+      "entries": 17,
+      "source": "6d87dfcec6d4d55422d325337fe2629f558f8131",
+      "repository": "https://github.com/pi0n00r/Ava",
+      "deployed_image": "sha256:f479c3b7d3caa9d0b4a3e7ffa3f67d1aeab8208bb8e8ccc0458bf6186c1c5ed5",
+      "dependency_base_image": "sha256:76a6a719e1066638506c92c655d29acf53d459b6550cd4abd72e17a74d63a939",
+      "role": "Whisper idle-finalisation recovery; separate from unchanged Ava call engine",
+      "sidecars": [],
+      "helper": "ava/deploy-stt.py",
+      "helper_sha256": "c32ac679a3c699c0072dc80bbf16a0116946889f06cb3dd7990223dc367e65ed",
+      "fresh_host_restore": "Ava owner setup plus canonical local_ai_server GPU Dockerfile; full dependency rebuild unqualified; retained-base scoped entrypoint check/verify passed; human conversation and IMAP acceptance pending",
+      "coordinator_native_dispatch": false,
+      "ordinary_configuration_overwrite": false
+    },
+    "aigis": {
+      "kind": "sha_manifest",
+      "acquisition": "Documents/Projects/AIgis/staging/aigis-package-2026.9.4-942-g108ca20b059-20260914",
+      "manifest": "SHA256SUMS",
+      "manifest_sha256": "7394e3364de928a36ad103c1c91e60f1a41b8c8f923e9c3d2ba1b62cd004d2eb",
+      "entries": 53,
+      "source": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "role": "current presence and existing thirteen attention-route projection",
+      "sidecars": [
+        {
+          "root_key": "aigis-erratum",
+          "path": "AIGIS-PACKAGE-TESTS-HASH-ERRATUM-20260914.txt",
+          "acquisition": "Documents/Projects/VIP/receipts/AIGIS-PACKAGE-TESTS-HASH-ERRATUM-20260914.txt",
+          "sha256": "c22f2cfc0e312e38497618972504c9edb68d5c12883330ad65d9ee573ad45448"
+        }
+      ],
+      "fresh_host_restore": "existing AIgis owner install and protected credential/service procedure; not executed here"
+    },
+    "matrix": {
+      "kind": "sha_manifest",
+      "acquisition": "Documents/Projects/openclaw/staging/matrix-generation-g-ecd0f1a7214b03c3-20260914-r1",
+      "manifest": "SHA256SUMS",
+      "manifest_sha256": "16608491dcd71a6f447414f07e410639e984bc2ab14471db6a466489b3c4bc26",
+      "entries": 11,
+      "generation": "g-ecd0f1a7214b03c3",
+      "role": "external official Matrix plugin generation excluded from the core closure",
+      "sidecars": [],
+      "archive_verification": "raw archive and three inventory byte hashes only; no extraction or link dereference",
+      "fresh_host_restore": "existing owner generation/index/plugin procedure at recorded paths; not executed here"
+    },
+    "localai": {
+      "kind": "sha_manifest",
+      "acquisition": "Documents/Projects/LocalAI/AImee/staging/localai-4.8.2-recovery-6ef8d6d-20260914",
+      "manifest": "SHA256SUMS",
+      "manifest_sha256": "50274889385ac422fe2dc40c9ad173448135923d4dba4de481a6639bdee4a6af",
+      "entries": 22,
+      "source": "6ef8d6d2c45c16622afd041e832198c3ef2987b5",
+      "application_version": "4.8.2",
+      "role": "managed gptoss-aimee-local route and unchanged provider/model selectors",
+      "sidecars": [
+        {
+          "root_key": "localai-acquisition",
+          "path": "MODEL-ACQUISITION-AMENDMENT.json",
+          "acquisition": "Documents/Projects/LocalAI/AImee/staging/localai-4.8.2-recovery-6ef8d6d-20260914-model-acquisition-r1/MODEL-ACQUISITION-AMENDMENT.json",
+          "sha256": "ce45effee41aeb19dac4213e1b115de473cd35d2adb937d864e5fbbd598e497c"
+        }
+      ],
+      "fresh_host_restore": "existing LocalAI owner image/worker/ROCm setup and pinned weight acquisition; metadata is not downloaded/live weight verification"
+    },
+    "managed-config": {
+      "kind": "artifact",
+      "acquisition": "Documents/Projects/openclaw/staging/current-managed-config-20260914-df5b26d5",
+      "archive": "current-managed-config-20260914-df5b26d5.tar.gz",
+      "archive_sha256": "565f3df98f2ca4d4c7f4d39544e30661b1a3b2a0abffd924b6bf9214954c46f0",
+      "role": "Current protected Crustacea configuration for total-loss reconstruction",
+      "sidecars": [],
+      "fresh_host_restore": "Use the owner configuration procedure; preserve current configuration and ledgers during ordinary code updates"
+    },
+    "avr-foundation": {
+      "kind": "native_inventory",
+      "acquisition": "Documents/Projects/Avril/staging/avr-foundation-private-20260914-ifc4hm4k",
+      "inventory": "NATIVE-INPUT-INVENTORY.json",
+      "inventory_sha256": "2733c610b15147b26637261270ada1a321df1a40d7df933a15d5027469f2e754",
+      "inventory_schema": "avr-foundation-private-amendment-v1",
+      "archive": "avr-current-foundation-private.tar.gz",
+      "archive_sha256": "19f26cf41fd664ef5cd380ef2f3d6da89c86e3e7383c481d329759d559588441",
+      "entries": 32,
+      "role": "full current AVR Compose/env/local bindings and protected access material; separate from Tessa",
+      "sidecars": [],
+      "fresh_host_restore": "standby AVR owner setup only when explicitly selected; not a prerequisite for standalone Ava Tessa; preserve recorded native ownership/modes"
+    },
+    "relay-current": {
+      "kind": "sha_manifest",
+      "acquisition": "Documents/Projects/openclaw/staging/aimee-main-voice-71794f4-20260914-r1",
+      "manifest": "SHA256SUMS",
+      "manifest_sha256": "58e9323252ab9500f919290ee7dbbd552be13d51e04fab4d34f464ecdb7cf79d",
+      "entries": 50,
+      "source": "71794f4df835cc5e772c120e12a45fca107ca042",
+      "runtime_sha256": "032a7da7bec4004c74dc3c95535ca49e532387d3816c1ac611100bf721c7dcbd",
+      "role": "Installed Crustacea voice relay source, private native configuration and recovery kit",
+      "sidecars": [],
+      "fresh_host_restore": "Use deploy-kit/DEPLOY.md and native PVE snapshots; source, unit and protected environment are included; Gateway foundations remain separate"
+    }
+  },
+  "components": {
+    "rita": {
+      "host": "vip.bajaj.com",
+      "protocol": "current_rita_owner_packet",
+      "kit": "rita",
+      "source": "6b0efd9a6ed9d702fcc5eb8901b76fbae74fa6d4",
+      "binary_source": "dca859df6c0ccd87508d372b836ed8f926471e44",
+      "runtime": "6b0efd9a6ed9d702fcc5eb8901b76fbae74fa6d4",
+      "acquisition": "Documents/Projects/Rita/staging/current-producer-20260914-r2",
+      "canonical": "rita-0.1.0-bajaj.20260913-newexten-7ff4690f9467-source-6b0efd9a6ed9-canonical.tar.gz",
+      "canonical_sha": "0bf2e689f0a42c3584569f7d6b87991e2638f872fb9e18982630fb7208a949c1",
+      "manifest_sha": "12922d145576ce5bd1203a85e41cb39650af1f2665f839c9c94308d2d36a10dd",
+      "skeleton": "rita-6b0efd9-current-20260914-r2-skeleton.tar.gz",
+      "skeleton_sha": "d398fb0df2ecb8027b227e948955e8a7c09c660fc9ea872e3815363bbd0da7cf",
+      "inventory": "rita/CANDIDATE.json",
+      "inventory_sha": "a173e03fcd10284b2c8c304b8d5ec6398933e6531c7ab0faeaa7a9416e9cf94b",
+      "source_files": 49,
+      "kit_files": 115,
+      "kit_bytes": 9102586,
+      "helper": "recovery/promote-producer.py",
+      "helper_sha": "85c02b6ce3d8c62281922959f495f50b3af951669d60feaff527eeb0ae1528a9",
+      "retained_helper": "rita/deploy-rita-canonical.py",
+      "retained_helper_sha": "52c9182469c86c94f1406bfff8d495a9c29e78c5230711a5d5fe2bb4a93ed7f4",
+      "backup_base": "/var/backups/aimee-pbx-router-producer-20260914",
+      "environment_sha": "9af2aa15410c831f8ef9c421edf2e9845dbf2c1518c445c163a7ef1b4e20d56e",
+      "current_config_capture": {
+        "acquisition": "Documents/Projects/Rita/staging/current-producer-config-20260914",
+        "archive": "current-native-config.tar.gz",
+        "archive_sha256": "9a416f37e4f47a07447b781a3d6f18f21b42ac3f920ae8ed87626b985269b449",
+        "members": {
+          "etc/aimee-pbx-router.env": [
+            "9af2aa15410c831f8ef9c421edf2e9845dbf2c1518c445c163a7ef1b4e20d56e",
+            619,
+            384,
+            0,
+            0
+          ],
+          "etc/aimee-pbx-router-route-aliases.json": [
+            "a614eed543266442bb10aa9e8e7e75cda91aa9fc234a4605e0a18ec4ec38cf13",
+            108,
+            416,
+            0,
+            996
+          ],
+          "etc/avril-voicemail-helper.json": [
+            "bcbd61070c9ea33f111fa2d93753a6bf55ba57738aecacab3a1e318c14dc2096",
+            340,
+            416,
+            0,
+            997
+          ],
+          "etc/systemd/system/aimee-pbx-router.service": [
+            "11267c4d3f3a581c69f131587ea33c52602a3e6ca615add3cd4da038fb3b88ee",
+            875,
+            420,
+            0,
+            0
+          ]
+        },
+        "total_loss_only": true,
+        "ordinary_rollback_allowed": false
+      },
+      "selector": "AVRIL_AIMEE_TTS_URL=http://ava.bajaj.com:6013/text-to-speech-stream",
+      "after": {
+        "/usr/local/libexec/aimee-pbx-router": "eeb7bc0265b51be0531ab504640876beaa248a4f8864a1f5bdb731cbe804318f",
+        "/usr/local/libexec/avril_voicemail_command.py": "dd753b793154c96ce3c0cfef3a519b126ee3965e4ee3b5804e2e09519a271dac"
+      },
+      "protected": [
+        "/etc/aimee-pbx-router.env",
+        "/etc/avril-voicemail-helper.json",
+        "/etc/aimee-pbx-router-route-aliases.json",
+        "/etc/systemd/system/aimee-pbx-router.service",
+        "/etc/asterisk/extensions_custom.conf"
+      ],
+      "skeleton_equal_required": true
+    },
+    "ava": {
+      "host": "ava.bajaj.com",
+      "kit": "ava",
+      "source": "92e848b2e6e364b0237a40790a91c7c3af752532",
+      "helper_commit": "92e848b2e6e364b0237a40790a91c7c3af752532",
+      "repository": "https://github.com/pi0n00r/Ava",
+      "acquisition": "Documents/Projects/Ava/staging/ava-accepted-four-payload-92e848b-20260914",
+      "canonical": "ava-pi0n00r-92e848b-canonical.tar.gz",
+      "canonical_sha": "97b4bdf4a3b2851d26aea8e38281c7b350a5fdb362d9e22f6009122e04949519",
+      "manifest_sha": "8c1ff9327095e2f066605f59034e2c969dd9b7dd60ad3b75ed4b9d6ea1cb3c4a",
+      "skeleton": "v92e848b-skeleton.tar.gz",
+      "skeleton_sha": "4acae7e668bc28394e51f9f8ad70394ad9aaa7d499dc5840bdc5fb20d7ec5260",
+      "inventory": "KIT-INVENTORY.json",
+      "inventory_sha": "4992e854ce3162fcd02f9dcad8c8bcfab557590e5f4956940dba7ccd8eda4f78",
+      "source_files": 753,
+      "kit_files": 791,
+      "helper": "deploy/deploy-ava-prior-message-reference.py",
+      "helper_sha": "ab44d6f1d93d3fcbc2c0c84185a31e86e7001974ff3b0d6c40190a27cdfcd482",
+      "installed_verifier": "deploy/deploy-ava-prior-message-reference.py",
+      "installed_verifier_sha": "ab44d6f1d93d3fcbc2c0c84185a31e86e7001974ff3b0d6c40190a27cdfcd482",
+      "installed_verification_source": "92e848b2e6e364b0237a40790a91c7c3af752532",
+      "installed_verification_tree": "cfd292d29799d209b8506ee9c21de3981cd15000",
+      "installed_verification_test_sha": "c2b4c907ee79bc41bd90d7c7fc0ce7fc252da723c7893f2b4299a4752a59cb3c",
+      "backup_base": "/home/aimee/.local/share/ava-rollback",
+      "image": "sha256:91ae246a07be78ff38ac4d5e95bcaa1deedac17bbaa1ae96c0e379455d04f2c7",
+      "payload_layout": "current ava/src -> host-local src; paired engine and memo guard; exact accepted helper provides check/apply/rollback/installed verification; DEPLOY.md covers private clean-host inputs",
+      "before": {
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/src/core/pipeline_message_deposit.py": "f1b2ce1fece75c6c0870c82c8266f8c82a7fc1df8aece96d350af1bc0f07e0be",
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/src/engine.py": "1e382013e719b1eb73aa163f2e462d3ea71a32bf1c374335009506e178ad1780"
+      },
+      "after": {
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/src/core/pipeline_message_deposit.py": "d9cf660a226d4e2c2a2e1ee2a8b4ee9a2cd89d7f84a2571a978bd3a6aa445693",
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/src/engine.py": "5ed471f1a0395595c22f112b8d43b574aeb698105fa03ea2abd63cdd9a8d1c4e"
+      },
+      "protected": [
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/.env",
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/config/ai-agent.yaml",
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/config/ai-agent.local.yaml",
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/docker-compose.yml"
+      ],
+      "DB": "evidence_only_existing_rows_never_rewind_or_infer_tool_selection_from_null",
+      "runtime": "27b936e93b61b35981a411eaede2fc4e42e461e7",
+      "runtime_tree": "30e67a92310e54945b7339e52c138c5c26b833d4",
+      "source_tree": "cfd292d29799d209b8506ee9c21de3981cd15000",
+      "logical_agents_sha256": "cf4e4ef9f57622918c4bdbc57578aa2588baa45a096763484f92d17b04947e5e",
+      "foundation_files": {
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/src/tools/context.py": "78d8cd33f8a5a98b28a951b28d37b5aead27434c2f5972bbf7ca6ca5183067a1",
+        "/opt/AVA-AI-Voice-Agent-for-Asterisk/src/tools/http/in_call_lookup.py": "ac62204c97f7174c8f563c78cec7d70e6b9e34619711ab2a26db5fe74ba6e647"
+      },
+      "historical_repository_checkpoint": "80cdace058451878cc46974dbe9634a7aeb02e07"
+    },
+    "tessa": {
+      "host": "ava.bajaj.com",
+      "protocol": "current_owner_files",
+      "source": "173c3bf2d342f00e8556b92c21835cd5332a2ea3",
+      "acquisition": "Documents/Projects/Tessa/staging/tessa-standalone-173c3bf-r2/tessa",
+      "source_provenance_sha256": "ac83e8fffb0261cad951f33fa77d5e47defc6861e75c573dcf970f85bf88eab2",
+      "canonical_source_sha256": "ad18c1df87d5a3910e21c999bc2cd6f94834e4870587a94d2fc84ca14d531f9e",
+      "source_files": 16,
+      "kit_files": 19,
+      "kit_bytes": 106126,
+      "native_root": "/opt/tessa",
+      "compose": "/opt/tessa/deployment/docker-compose.yml",
+      "manual_owner_commands": [
+        "cd /opt/tessa/deployment",
+        "docker compose build",
+        "docker compose up -d"
+      ],
+      "manual_owner_install_supported": true,
+      "automated_transaction_supported": false,
+      "missing_execution_prerequisite": "automated_Tessa_transaction_and_rollback_unsupported_manual_owner_Compose_install_supported",
+      "after": {
+        "/opt/tessa/source/index.js": "f0b1ef0e2b6d532b86da31f3eb5258ea8cd80a42e270d455c0aa5f736c0f89a2"
+      },
+      "files": {
+        "deployment/docker-compose.yml": [
+          "9bf2675fb3462dd31525bdcfb85696e4a7b8a98f6b37b829e81f831862c78019",
+          706
+        ],
+        "deployment/rita-provider.env": [
+          "e1eaaafcc828e622bb0f2f50aa8186da496d320d2485192e0a2de7d86a6aec3d",
+          231
+        ],
+        "source/.env.example": [
+          "96503e16fa22ab759b3c10241da52e502a62556f46bf8e44a5432c55b951dca5",
+          188
+        ],
+        "source/.gitignore": [
+          "babdb4c16cd20eb58c462d6b288b94dbf7e6ae44cca32611bae05a7b28a82b59",
+          17
+        ],
+        "source/AI-NOTICE.json": [
+          "272b6f294a5819e6d1ec92f434a1b58b1e9223b448c628cc0e4547962ed19669",
+          345
+        ],
+        "source/BAJAJ-FLEET-NOTICE.md": [
+          "5a0a0b1f71ee0cd18952001b7f9d89b19a8f6aa0a10b365a2989b8f745768e25",
+          940
+        ],
+        "source/Dockerfile": [
+          "50da63bad87e8027257fcc8c8fe02fdee04d73fda8c2c3982ac7f471822274d3",
+          417
+        ],
+        "source/LICENSE.agpl": [
+          "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+          34523
+        ],
+        "source/LICENSE.md": [
+          "97d70e98984ba09c058f54a1780f2d791fb8ba14c08d47021edf6e2878639c4c",
+          1077
+        ],
+        "source/README-BAJAJ.md": [
+          "6d2dac44f4e96b76f09eefb8a3de1b3fe40bbfb1a204c368f6b22871a8289325",
+          1685
+        ],
+        "source/README.md": [
+          "ee8f2aca7c5947f4ad0603db91771389dcf77d49badf3e4e5e2a0bfa8e37bc91",
+          4861
+        ],
+        "source/UPSTREAM.json": [
+          "32e5b07092d51cc65a2cd6d7c207fa7c28cd597d624a25a2b290a309ec05f982",
+          411
+        ],
+        "source/index.js": [
+          "f0b1ef0e2b6d532b86da31f3eb5258ea8cd80a42e270d455c0aa5f736c0f89a2",
+          5264
+        ],
+        "source/package-lock.json": [
+          "e097964e28151cf2b6f7c77b8b6d10bb7fa56d2e23818b6515a84fcc762369bb",
+          44193
+        ],
+        "source/package.json": [
+          "f412ca4620e574b678275827cba09cf80e1d325d4767b64b747393d7fa8d7398",
+          1142
+        ],
+        "source/scripts/build-image.sh": [
+          "93389d4aa88a44b7c42aef403031e500960a9b3799443925bb104e68f5c7a288",
+          409
+        ],
+        "source/scripts/verify-source.sh": [
+          "d22cc6037c8b06e7b9d2f45a0b6b3114c1e24d9c8a1fcfe0cc82e6c1d6f13d00",
+          894
+        ],
+        "source/test/contract.test.js": [
+          "7ca1c821472245543dd44e39b69b362b35a33234b1af9ce68236d3c92d49761c",
+          6949
+        ],
+        "OPERATOR.md": [
+          "62c5eeb619bc0a215445bb2450894eaba4bd68e0d23970d309d875d00c265e4a",
+          1874
+        ]
+      }
+    },
+    "voice-organ": {
+      "host": "vip.bajaj.com",
+      "kit": "voice-organ",
+      "source": "a7fcdad2b34cf67e21774f3722fc36572efa0482",
+      "acquisition": "Documents/Projects/Voice-Organ/staging/reconstructed-a7fcdad2b34c-bajaj.20260913",
+      "canonical": "voice-organ-a7fcdad2b34c-canonical.tar.gz",
+      "canonical_sha": "720c1bdfc88456e8c20014d96927d596d433f7e22fdb5992f910a5c85cd5e429",
+      "manifest_sha": "246eeb3570a54701e3e71fececc11648407500810f9e1d04d5d85d9a985b75b4",
+      "skeleton": "va7fcdad2b34c-skeleton.tar.gz",
+      "skeleton_sha": "faf9b72dca0ff9254279e81b546f597739c47fe24c5e9db09f4bba4562703c1e",
+      "inventory": "KIT-INVENTORY.json",
+      "inventory_sha": "1b83e108002fff01634bd539f233581ec90fa0ecf1abf366f1d26b4ad2c409b8",
+      "source_files": 66,
+      "kit_files": 90,
+      "helper": "deploy/replace-vip-executor.sh",
+      "helper_sha": "61694439b8baeeb5d7d752b30d2799976c0342284e74c69057f6d2266e320ad6",
+      "backup_base": "/root",
+      "after": {
+        "/usr/local/sbin/avril-call-executor": "ece5669ff13b36a6c1d4ba7a934f018a59b7debbf2eea55d1dd892a98f2e4a26"
+      },
+      "protected": [
+        "/etc/voice/voice-organ.env",
+        "/etc/voice/avril-call-executor.env",
+        "/etc/systemd/system/voice-organ-calld.service",
+        "/etc/systemd/system/avril-call-executor.service",
+        "/opt/voice-organ/calld.py",
+        "/opt/voice-organ/call_recon.py",
+        "/opt/voice-organ/isla_adapter.py",
+        "/opt/voice-organ/call-originate.py",
+        "/etc/asterisk/extensions_custom.conf"
+      ],
+      "execution_source": "e9d197df7aa6a854e823c3f6012298f536bcbf81",
+      "execution_helper": "recovery/deploy/replace-vip-executor.sh",
+      "execution_files": {
+        "recovery/deploy/replace-vip-executor.sh": "b146bf7e3b6b4d15ecca3f7d11ad74d6897915239aac86c6264fccf975f12abe",
+        "recovery/deploy/executor-transaction.py": "b13dba8d35eeebcb3ed9eca470fee3547518c4d25a18892175f54eff59bbe95e",
+        "recovery/deploy/verify-executor-abi.sh": "8e204f2c34940351567b52960867f35b95449996417f664e0a9ccf2b66eec4db"
+      }
+    },
+    "crustacea": {
+      "offline_owner": {
+        "kind": "sha_manifest",
+        "source": "fa3323b199ecb6b760d6725ec72131d18e9dacb5",
+        "acquisition": "Documents/Projects/openclaw/staging/current-telephony-recovery-fa3323b-20260914-r4/package",
+        "manifest": "SHA256SUMS",
+        "manifest_sha256": "5f4ec4a7fce81fa1cdaaff268600f07f28b9bc72dcab86aa3669a629cf011ed2",
+        "entries": 37,
+        "sidecars": [],
+        "role": "Exact captured Core verification without historical patchers; bundled relay is historical",
+        "fresh_host_restore": "Owner account/service foundation remains unqualified; use the separately retained current relay, not this packet's older relay"
+      },
+      "host": "crustacea.bajaj.com",
+      "source": "89c461ae642815907c3dd8f4653490979be89ab4",
+      "workflow_source": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "protocol": "captured_owner_packet",
+      "acquisition": "Documents/Projects/openclaw/staging/jd-discovery-2f02f65-20260914",
+      "helper": "recovery/captured-core-phase.py",
+      "backup_base": "/root",
+      "available_package": "/home/aimee/work/jd-voice-discovery-2f02f65-package/openclaw-2f02f65.tgz",
+      "available_package_sha256": "c840aebb3cee7df7b2829864de5d11d0fb5ddc01f4df388715949190373c8ef8",
+      "compiled_runtime": "2f02f65dc6dce2eb203d2d1a468919d3b471e457",
+      "current_binding": {
+        "path": "CURRENT-CORE-BINDING.json",
+        "sha256": "61360476a4c596d888b01999c62c85dced86884607501d94df2272e76603b61c"
+      },
+      "historical_foundation": {
+        "compiled_runtime": "6fd2c52616977226522e759ecbcfcca093e76295",
+        "package_sha256": "1a1dc62f6ef705bc2e516588cd6768638637e261c289562fc64e58e3018b912f",
+        "archive_sha256": "717a7eb89dbc5bf68a21b4e11691720059da13787c485fc4e3531234544d43cb",
+        "managed_config_sha256": "a7a91c99846211ea9c9d9bfbcb4c860f1ca5572dd1e42c0ae27b13319b2943bb",
+        "ordinary_rollback_authority": false
+      },
+      "execution_files": {
+        "recovery/install-core-phase.sh": "e23bd07dcd48a69ef026b6ed2e2b188592ad7c8dbe4fe38eee3588ef0c32da64",
+        "recovery/openclaw-core-install.commands": "5ea4363ee5402b636a5c59eba8e4497953deb2c943fa1a0e1e3ba1f7a71d880d",
+        "recovery/captured-core-phase.py": "ff5d727547490ac2ec821ba51b58b343d70102fb548c85813888ac0fe03523b7",
+        "recovery/core-workspace-recovery.py": "d4c8606c0b3206a8903d4e58bcc4651214e43e00ade749d0dad34b4105774f3f",
+        "recovery/retained-dist-patchers/oc-narrative-timeout-extend-patch.py": "4273afbe1b28e640028739737cd31a382e169a5f74c64dc159343841643987e6",
+        "recovery/retained-dist-patchers/oc-corpus-taint-filter-patch.py": "bfb69d7c14f6a95855eb4791ee16b139f41759c4190cb3cfcacf78a8a31e5a49",
+        "recovery/retained-dist-patchers/oc-rem-narrative-firegate-patch.py": "7989b4a2a07cf86b389a9bc22643e6807297d9c9cea06704fd3b779271169c23",
+        "recovery/retained-dist-patchers/verify-all.sh": "44340e030e40770416bf1dbec9bac5b84efcf5868ed3c22701c70291e38234e5",
+        "recovery/retained-dist-patchers/oc-corpus-noise-filter-patch.py": "dc73c56899332816cbc9887b8c0f82b55f91f1cda36b0048ae1497186fd8b486"
+      },
+      "foundation_gaps": [
+        "Operator host-local staging with existing protected fleet key and current live Ava candidate for native callable gates",
+        "Fresh native controls/static/current-generation CAS and owner maintenance quiescence before explicit recovery",
+        "Native recovery has not executed; retained closure is current disk evidence, not historical loaded-module proof",
+        "Current noise/taint fixture changes captured ingestion; retained exact-byte four-patcher restore needs owner review, not a waived final byte check"
+      ],
+      "protected": [
+        "/home/aimee/.openclaw/openclaw.json",
+        "/etc/systemd/system/openclaw.service",
+        "/etc/aimee-main-voice-relay.env",
+        "/etc/systemd/system/aimee-main-voice-relay.service",
+        "/usr/local/libexec/aimee-main-voice-relay",
+        "/home/aimee/.openclaw/workspace/skills/avril-call/.openclaw/source-origin.json"
+      ],
+      "helper_sha": "ff5d727547490ac2ec821ba51b58b343d70102fb548c85813888ac0fe03523b7",
+      "closure": {
+        "root": "/home/aimee/work/jd-vip-current-core-r12-20260914-wcw40wo8/inputs/current-core-2f02f65",
+        "archive": "openclaw-installed-2f02f65-current.tar.gz",
+        "archive_sha256": "f8fab62a41fdc351729121c8de2a7eedaa912477950df720bb0d1a774074f63e",
+        "manifest": "archive-manifest.json",
+        "manifest_sha256": "8c5e82050115ea4dfefe5af98215252f0f2368f9d41cf58ee70ab687c0e75476",
+        "receipt": "CAPTURE-RECEIPT.json",
+        "receipt_sha256": "967d8bfa77d4e0a7b49a719248900ed166ee1cd23350623d5922fc529cdc6623"
+      },
+      "native_gate_contract": {
+        "kind": "vip-owner-native-v1",
+        "owner_receipt_sha256": "1a0e7d55123e0da725e27716ed13e44969a6404c6cf001bf5c5b0987524c16f2"
+      },
+      "owner_receipt_sha256": "1a0e7d55123e0da725e27716ed13e44969a6404c6cf001bf5c5b0987524c16f2",
+      "accepted_native_gate_base": "a7e0a979d5e39ca21beb30f04745fc680ef7c01c",
+      "path_compatibility": "Exact static skills/<name>/agents/openai.yaml descriptor; runtime agents and state remain excluded"
+    }
+  }
+}

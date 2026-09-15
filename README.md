@@ -14,18 +14,35 @@ endorsed by, or an official distribution of Sangoma Technologies or the
 FreePBX project. FreePBX and Asterisk remain separately versioned upstream
 dependencies.
 
-The first retained component is the existing FreePBX 17 Sysadmin-notice
-calibration. Its implementation remains at its original paths and is pinned by
-`release/freepbx-integration-lock.json`. Run the offline verifier before using
-any retained component:
+The repository now also retains a source-only backup of the accepted Bajaj
+telephony integration release. It is the integration and release layer around
+FreePBX/Asterisk, Ava, Rita, Tessa, Voice Organ and Crustacea; it is not a copy
+of FreePBX core or any component's private recovery kit. The backup is imported
+from private source commit `f023339aba06c7e6990737b431a0ef546243a272`
+(tree `9d7d59477daeb5a6911a731988764e118da487c2`) under `telephony/`.
+
+The existing FreePBX 17 Sysadmin-notice calibration remains at its original
+paths and is pinned by `release/freepbx-integration-lock.json`. Run both
+offline verifiers before using retained source:
 
 ```sh
 python3 -B scripts/verify-integration.py
+python3 -B scripts/verify-telephony-backup.py
 ```
 
-This repository contains source and release metadata only. Machine-specific
-configuration, credentials, populated recovery payloads and deployment
-receipts do not belong here.
+`release/telephony-source-backup.sha256` pins every imported file. The verifier
+requires exact membership and hashes and rejects private-key material, bearer
+credentials, common token assignments, environment files, databases, key
+stores and private archives. This repository contains source and release
+metadata only. Machine-specific configuration bytes, credentials, populated
+recovery payloads, databases, ledgers, recordings and deployment receipts do
+not belong here.
+
+The tracked owner-input JSON files are schemas, content hashes and restoration
+contracts from the accepted source—not secret values or captured payloads.
+Restoration still requires separately retained private material and current
+owner approval. Nothing in this repository performs a deployment merely by
+being cloned or verified.
 
 See `INDEPENDENT-FORK-NOTICE.md` for the project boundary. The historical
 calibration documentation follows unchanged below.

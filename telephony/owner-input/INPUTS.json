@@ -1,0 +1,184 @@
+{
+  "schema": "crustacea-captured-core-phase-v1",
+  "base_source": "bdd99b1827360ce72d00b8d30bc0acc346cb27af",
+  "closure": {
+    "root": "/home/aimee/work/jd-vip-current-core-r12-20260914-wcw40wo8/inputs/current-core-2f02f65",
+    "archive": "openclaw-installed-2f02f65-current.tar.gz",
+    "archive_sha256": "f8fab62a41fdc351729121c8de2a7eedaa912477950df720bb0d1a774074f63e",
+    "manifest": "archive-manifest.json",
+    "manifest_sha256": "8c5e82050115ea4dfefe5af98215252f0f2368f9d41cf58ee70ab687c0e75476",
+    "receipt": "CAPTURE-RECEIPT.json",
+    "receipt_sha256": "967d8bfa77d4e0a7b49a719248900ed166ee1cd23350623d5922fc529cdc6623"
+  },
+  "expected_current_sha256": "43b814537c4b8f5756aaecb20f4a6b42a046c170898631a95cec009c5c5b42f2",
+  "protected": {
+    "/home/aimee/.openclaw/openclaw.json": "df5b26d5473880104b27ff12120edb9c776e007d8e3a3fc52d4465d537caaefc",
+    "/etc/systemd/system/openclaw.service": "320d091c69bdcb77a97718d8a632a3fb57654359a723f0d62277e8bc6dab8977",
+    "/etc/aimee-main-voice-relay.env": "937039ef54b4306e3ce134f9c59c8e4f0c797103a165333df775d0cc8b12c9e9",
+    "/etc/systemd/system/aimee-main-voice-relay.service": "edd47e7bf521890c0e0749255dd1e15bbb5f27de97edd0c0072c0e728b6f0077",
+    "/usr/local/libexec/aimee-main-voice-relay": "4f85c196361920c50377737d507a813fb61a02ece4a8e03a4c5c5358ce49e260",
+    "/home/aimee/.openclaw/workspace/skills/avril-call/.openclaw/source-origin.json": "778080838dd5eb08185b91517108d02f51475d015407184833f8222708714894"
+  },
+  "retention_verifier_sha256": "44340e030e40770416bf1dbec9bac5b84efcf5868ed3c22701c70291e38234e5",
+  "patchers": [
+    {
+      "name": "oc-corpus-noise-filter-patch.py",
+      "source": "patchers/oc-corpus-noise-filter-patch.py",
+      "sha256": "dc73c56899332816cbc9887b8c0f82b55f91f1cda36b0048ae1497186fd8b486"
+    },
+    {
+      "name": "oc-corpus-taint-filter-patch.py",
+      "source": "patchers/oc-corpus-taint-filter-patch.py",
+      "sha256": "bfb69d7c14f6a95855eb4791ee16b139f41759c4190cb3cfcacf78a8a31e5a49"
+    },
+    {
+      "name": "oc-rem-narrative-firegate-patch.py",
+      "source": "patchers/oc-rem-narrative-firegate-patch.py",
+      "sha256": "7989b4a2a07cf86b389a9bc22643e6807297d9c9cea06704fd3b779271169c23"
+    },
+    {
+      "name": "oc-narrative-timeout-extend-patch.py",
+      "source": "patchers/oc-narrative-timeout-extend-patch.py",
+      "sha256": "4273afbe1b28e640028739737cd31a382e169a5f74c64dc159343841643987e6"
+    }
+  ],
+  "patch_targets": {
+    "session-ingestion": "/usr/lib/node_modules/openclaw/dist/session-ingestion-6vy4mT7v.mjs",
+    "dreaming-phases": "/usr/lib/node_modules/openclaw/dist/dreaming-phases-C-w6u2U1.mjs",
+    "dreaming-narrative": "/usr/lib/node_modules/openclaw/dist/dreaming-narrative-OOe1PAul.mjs"
+  },
+  "workspace": [
+    {
+      "target": "skills/avril-call/SKILL.md",
+      "source": "static/skills/avril-call/SKILL.md",
+      "sha256": "de143326ed1e914aae7099d6a94874be89c60eae45e1aa51ec9ca1bcaec4545d",
+      "before_sha256": "de143326ed1e914aae7099d6a94874be89c60eae45e1aa51ec9ca1bcaec4545d",
+      "target_mode": 420,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100644"
+    },
+    {
+      "target": "skills/avril-call/VERSION",
+      "source": "static/skills/avril-call/VERSION",
+      "sha256": "7970711952a452e93ae80a3836e2198c2c4112973a58068ab08588aae2dfbc2d",
+      "before_sha256": "7970711952a452e93ae80a3836e2198c2c4112973a58068ab08588aae2dfbc2d",
+      "target_mode": 420,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100644"
+    },
+    {
+      "target": "skills/avril-call/agents/openai.yaml",
+      "source": "static/skills/avril-call/agents/openai.yaml",
+      "sha256": "0156d9b4c41ca29ea0d4fd95b68f8906ed7a389291c88b3860a58fd3d86fc95c",
+      "before_sha256": "0156d9b4c41ca29ea0d4fd95b68f8906ed7a389291c88b3860a58fd3d86fc95c",
+      "target_mode": 420,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100644"
+    },
+    {
+      "target": "skills/avril-call/references/contract.md",
+      "source": "static/skills/avril-call/references/contract.md",
+      "sha256": "d3e2e9c7a5c4c6c07f0f15bf7539582c6763e3b89cc58b769d2caa286834a1d1",
+      "before_sha256": "d3e2e9c7a5c4c6c07f0f15bf7539582c6763e3b89cc58b769d2caa286834a1d1",
+      "target_mode": 420,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100644"
+    },
+    {
+      "target": "skills/avril-call/references/google-voice-acceptance.md",
+      "source": "static/skills/avril-call/references/google-voice-acceptance.md",
+      "sha256": "3e4d0f2f60e9417a8758c349586267d7d0bec575672e3f76922543364cb7d533",
+      "before_sha256": "3e4d0f2f60e9417a8758c349586267d7d0bec575672e3f76922543364cb7d533",
+      "target_mode": 420,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100644"
+    },
+    {
+      "target": "skills/avril-call/scripts/materialize_call_recording.py",
+      "source": "static/skills/avril-call/scripts/materialize_call_recording.py",
+      "sha256": "eaa691fbf15a92434b5f76462431126df413780391d8631b908dc7c586c0869b",
+      "before_sha256": "eaa691fbf15a92434b5f76462431126df413780391d8631b908dc7c586c0869b",
+      "target_mode": 509,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100755"
+    },
+    {
+      "target": "skills/avril-call/scripts/package.json",
+      "source": "static/skills/avril-call/scripts/package.json",
+      "sha256": "caf719503b85c719147cbc7609d0a297aa907fa3ce6cfd1907f8263108dd6ab3",
+      "before_sha256": "caf719503b85c719147cbc7609d0a297aa907fa3ce6cfd1907f8263108dd6ab3",
+      "target_mode": 420,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100644"
+    },
+    {
+      "target": "skills/avril-call/scripts/rita_internal_calls.d.ts",
+      "source": "static/skills/avril-call/scripts/rita_internal_calls.d.ts",
+      "sha256": "33c5026217bec052a16f30797cdd02b3fa668ac2b433c4b5b7dd3784c7cdd9f9",
+      "before_sha256": "33c5026217bec052a16f30797cdd02b3fa668ac2b433c4b5b7dd3784c7cdd9f9",
+      "target_mode": 420,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100644"
+    },
+    {
+      "target": "skills/avril-call/scripts/rita_internal_calls.js",
+      "source": "static/skills/avril-call/scripts/rita_internal_calls.js",
+      "sha256": "e1a36c69ae89532f9e1159152eba9bee983bf4b2c9be92c2893b1d680210b930",
+      "before_sha256": "e1a36c69ae89532f9e1159152eba9bee983bf4b2c9be92c2893b1d680210b930",
+      "target_mode": 420,
+      "source_commit": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+      "git_mode": "100644"
+    }
+  ],
+  "native_gate_contract": {
+    "kind": "vip-owner-native-v1",
+    "owner_receipt_sha256": "1a0e7d55123e0da725e27716ed13e44969a6404c6cf001bf5c5b0987524c16f2"
+  },
+  "owner_input": {
+    "receipt": "CRUSTACEA-RECOVERY-OWNER-INPUT-20260914.md",
+    "sha256": "1a0e7d55123e0da725e27716ed13e44969a6404c6cf001bf5c5b0987524c16f2",
+    "protected_config_metadata_origin": "CURRENT-CONFIG-AMENDMENT.json",
+    "historical_config_metadata": {
+      "sha256": "a7a91c99846211ea9c9d9bfbcb4c860f1ca5572dd1e42c0ae27b13319b2943bb",
+      "size": 41719,
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000
+    },
+    "protected_metadata": {
+      "/home/aimee/.openclaw/openclaw.json": {
+        "sha256": "df5b26d5473880104b27ff12120edb9c776e007d8e3a3fc52d4465d537caaefc",
+        "size": 41657,
+        "mode": 384,
+        "uid": 1000,
+        "gid": 1000
+      },
+      "/etc/systemd/system/openclaw.service": {
+        "sha256": "320d091c69bdcb77a97718d8a632a3fb57654359a723f0d62277e8bc6dab8977",
+        "size": 674,
+        "mode": 420,
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/aimee-main-voice-relay.env": {
+        "sha256": "937039ef54b4306e3ce134f9c59c8e4f0c797103a165333df775d0cc8b12c9e9",
+        "size": 833,
+        "mode": 416,
+        "uid": 0,
+        "gid": 1000
+      },
+      "/etc/systemd/system/aimee-main-voice-relay.service": {
+        "sha256": "edd47e7bf521890c0e0749255dd1e15bbb5f27de97edd0c0072c0e728b6f0077",
+        "size": 641,
+        "mode": 420,
+        "uid": 0,
+        "gid": 0
+      }
+    },
+    "static_source": "108ca20b05932f058d7cddb8bbfef29c1a598f6c",
+    "plugin_projection_observed_sha256": "d90e2ff84b4e30692508bfafd63206957ae32c1fdcf62ba124b28a26aacadee2",
+    "plugin_projection_encoding": "owner receipt provenance, compare semantic before/after without claiming identical encoding",
+    "stale_origin_preserved_not_authority": "/home/aimee/.openclaw/workspace/skills/avril-call/.openclaw/source-origin.json",
+    "historical_loaded_module_proof": false
+  }
+}

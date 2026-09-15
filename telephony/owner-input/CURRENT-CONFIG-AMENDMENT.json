@@ -1,0 +1,16 @@
+{
+  "archive": "current-managed-config.tar.gz",
+  "archive_sha256": "180019694b4bdcbf72796f242a8e8a6f664eb592063777b0d5a92c046f636830",
+  "member": "home/aimee/.openclaw/openclaw.json",
+  "native": {
+    "gid": 1000,
+    "mode": 384,
+    "sha256": "df5b26d5473880104b27ff12120edb9c776e007d8e3a3fc52d4465d537caaefc",
+    "size": 41657,
+    "uid": 1000
+  },
+  "ordinary_rollback_allowed": false,
+  "schema": "vip-current-managed-config-amendment-v1",
+  "supersedes_sha256": "a7a91c99846211ea9c9d9bfbcb4c860f1ca5572dd1e42c0ae27b13319b2943bb",
+  "total_loss_only": true
+}

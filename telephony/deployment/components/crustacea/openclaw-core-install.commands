@@ -1,0 +1,12 @@
+# AI-NOTICE:Schema-Version=0.1
+# AI-NOTICE:License=AGPL-3.0-or-later
+# AI-NOTICE:Project=crustacea
+# AI-NOTICE:Repository=https://github.com/pi0n00r/crustacea-backup
+# AI-NOTICE:Network-Service=AGPL section 13 applies to network-exposed services
+# Selected operator phase; not a standalone runner.
+
+# Keep the caller's private checkpoint mask; only the root npm child uses 022.
+sudo /bin/bash -c '
+    umask 022
+    exec /usr/bin/npm install -g --prefix /usr --prefer-offline --allow-scripts=openclaw "$1"
+' openclaw-core-install "$CORE_TGZ"
