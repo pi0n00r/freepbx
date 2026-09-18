@@ -44,6 +44,11 @@ Restoration still requires separately retained private material and current
 owner approval. Nothing in this repository performs a deployment merely by
 being cloned or verified.
 
+`vm-shutdown/` contains the VM-native FreePBX shutdown integration used by the
+current Debian 12 QEMU/KVM deployment. It retains the supported QEMU guest
+agent and packaged `fwconsole stop` path, adds bounded guest/host shutdown
+budgets, and intentionally excludes the historical LXC force-kill workaround.
+
 `release/telephony-source-backup.json` records the source identity, offline
 test results and one preserved historical Ava-test limitation. The `telephony/`
 subtree itself is byte- and mode-exact to the accepted private source tree;
