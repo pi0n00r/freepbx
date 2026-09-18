@@ -9,8 +9,8 @@ The supported chain is:
 2. systemd stops `freepbx.service` through its packaged
    `ExecStop=/usr/sbin/fwconsole stop` while MariaDB and the writable root
    filesystem remain available through the packaged ordering.
-3. This drop-in expands FreePBX's stop budget from systemd's 90-second default
-   to four minutes. The Proxmox VM shutdown budget is five minutes.
+3. This drop-in gives FreePBX 75 seconds to stop. The Proxmox VM shutdown
+   budget is 90 seconds, avoiding a prolonged wait when storage is unhealthy.
 
 The installer is fail-closed: it requires KVM, an active guest agent, a
 writable root, the exact packaged FreePBX unit preimage, zero calls/channels,
@@ -33,7 +33,7 @@ sudo ./install-freepbx-vm-shutdown.sh --install \
   --expected-unit-sha256 b82a52ad0d9852f355567bad25064641a5bf6260bbf29ccbb2db8a4c754becd3
 ```
 
-On Garden, the matching host-side setting is VM 125 `startup: down=300`.
+On Garden, the matching host-side setting is VM 125 `startup: down=90`.
 The existing `agent: 1` setting is retained.
 
 An actual poweroff remains a separately scheduled acceptance test. A previous
