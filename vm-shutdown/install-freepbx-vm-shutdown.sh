@@ -82,7 +82,7 @@ fi
 
 if [ -z "$root" ] && [ "$action" = --install ]; then
     systemctl daemon-reload
-    [ "$(systemctl show freepbx.service -p TimeoutStopUSec --value)" = 1min\ 15s ] || {
+    [ "$(systemctl show freepbx.service -p TimeoutStopUSec --value)" = 45s ] || {
         echo "effective_timeout_mismatch" >&2; exit 1;
     }
 fi
